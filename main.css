@@ -1,0 +1,71 @@
+/** main css file **/
+body, html {
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family: "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #666;
+}
+.first-parallax, .second-parallax, .third-parallax {
+    position: relative;
+    /** opacity: 0.70; **/
+}
+
+.first-parallax {
+    background: url('https://virtualideaz.github.io/parallax-static-website/first-parallax.jpeg') no-repeat fixed center;
+    min-height: 100%;
+    opacity: 0.80;
+}
+.second-parallax {
+    background: url('https://virtualideaz.github.io/parallax-static-website/second-parallax.jpeg') no-repeat fixed center;
+    min-height: 400px;
+    opacity: 0.70;
+}
+.third-parallax {
+    background: url('https://virtualideaz.github.io/parallax-static-website/third-parallax.jpeg') no-repeat fixed;
+    min-height: 100%;
+    opacity: 0.70;
+}
+
+.section {
+    text-align: center;
+    padding: 50px 80px;
+}
+
+.section-light {
+    background-color: lightgray;
+    color: #666;
+}
+.section-dark {
+    background-color: darkgray;
+    color: #FFF;
+}
+
+.ptext {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+.border {
+    background-color: #111;
+    color: #FFF;
+    padding: 20px;
+}
+.text{
+    background-color: transparent;
+}
+
+/*** media query ***/
+
+@media(max-width: 568px) {
+    .first-parallax, .second-parallax, .third-parallax {
+        background-attachment: scroll
+    }
+}
